@@ -4,12 +4,11 @@ import useAPI from '../useAPI/useAPI';
 
 function CardList() {
     const { data } = useAPI();
-    console.log(`this the data from card list: ${data}`);
-    console.dir(data);
+    // console.log(`this the data from card list: ${data}`);
+
     return (
-        <div>
+        <div className='w-full gap-x-4 gap-y-2 grid grid-cols-2 md:grid-cols-3'>
             {data?.map(function (item) {
-                console.log(item);
                 return <Card item={item} />;
             })}
         </div>
