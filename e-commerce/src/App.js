@@ -7,7 +7,7 @@ function App() {
 
     return (
         <div className='w-full '>
-            <p className='bg-color[white]'>Hello World</p>
+            <p className='bg-color[white]'>Responsive E-Commerce Site</p>
             <CardList />
         </div>
     );
