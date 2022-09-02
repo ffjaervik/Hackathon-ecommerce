@@ -9,7 +9,9 @@ function useAPI() {
                     `https://fakestoreapi.com/products`
                 );
                 const dataResponse = await response.json();
+                console.log(dataResponse)
                 setData(dataResponse);
+                
             } catch (error) {
                 console.log('error', error);
             }
